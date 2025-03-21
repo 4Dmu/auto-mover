@@ -56,7 +56,6 @@ else
     watchLocations.Add(watchLocation);
 }
 
-Console.WriteLine(JsonSerializer.Serialize(watchLocations));
 using var watcher = new Watcher(watchLocations);
 watcher.Start();
 
